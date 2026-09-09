@@ -36,7 +36,7 @@ function App() {
 
         <div className="splash-divider"></div>
 
-        <img src="/npm.png" alt="JAX" />
+        <img src="/npm.webp" alt="JAX" />
       </div>
     );
   }

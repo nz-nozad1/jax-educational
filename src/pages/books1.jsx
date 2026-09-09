@@ -33,7 +33,7 @@ function Books1({ onBackHome, onOpenBooks2, onGoHome }) {
   const [musicPlaying, setMusicPlaying] = useState(false);
   const musicRef = useRef(null);
   const [profileImage, setProfileImage] = useState(1);
-  const [logoImage, setLogoImage] = useState("/npm.png");
+  const [logoImage, setLogoImage] = useState("/npm.webp");
 
   // تبديل صور البروفايل كل ثانيتين
   useEffect(() => {
@@ -46,7 +46,7 @@ function Books1({ onBackHome, onOpenBooks2, onGoHome }) {
 
   // تبديل الشعار كل 5 ثواني
   useEffect(() => {
-    const logos = ["/npm.png", "/nz7.png"];
+    const logos = ["/npm.webp", "/nz7.png"];
 
     let index = 0;
 
@@ -115,7 +115,7 @@ function Books1({ onBackHome, onOpenBooks2, onGoHome }) {
             src={logoImage}
             alt="Logo"
             className={`brand-logo ${
-              logoImage === "/npm.png"
+              logoImage === "/npm.webp"
                 ? "aqqad-logo"
                 : "nz7-logo"
             }`}
@@ -483,7 +483,7 @@ function Books1({ onBackHome, onOpenBooks2, onGoHome }) {
         {showManagerNote && (
           <section className="manager-note">
             <img
-              src="/npm.png"
+              src="/npm.webp"
               alt="مدرسة العقاد العسكرية"
               className="manager-note-logo"
             />

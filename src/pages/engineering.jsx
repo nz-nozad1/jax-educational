@@ -17,7 +17,7 @@ const cards = [
   const [selectedCard, setSelectedCard] = useState(null)
 
   const [profileImage, setProfileImage] = useState(1)
-  const [logoImage, setLogoImage] = useState('/npm.png')
+  const [logoImage, setLogoImage] = useState('/npm.webp')
 
   // تبديل صور البروفايل كل ثانيتين
   useEffect(() => {
@@ -33,7 +33,7 @@ const cards = [
   // تبديل الشعار كل 5 ثواني
   useEffect(() => {
     const logos = [
-      '/npm.png',
+      '/npm.webp',
       '/nz7.png'
     ]
 
@@ -111,7 +111,7 @@ const cards = [
             src={logoImage}
             alt="Logo"
             className={`brand-logo ${
-              logoImage === '/npm.png'
+              logoImage === '/npm.webp'
                 ? 'aqqad-logo'
                 : 'nz7-logo'
             }`}

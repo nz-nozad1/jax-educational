@@ -18,7 +18,7 @@ const cards = [
   const [musicPlaying, setMusicPlaying] = useState(false)
   const musicRef = useRef(null)
   const [profileImage, setProfileImage] = useState(1)
-  const [logoImage, setLogoImage] = useState('/npm.png')
+  const [logoImage, setLogoImage] = useState('/npm.webp')
 
   // تبديل صور البروفايل كل ثانيتين
   useEffect(() => {
@@ -32,7 +32,7 @@ const cards = [
   // تبديل الشعار كل 5 ثواني
   useEffect(() => {
     const logos = [
-      '/npm.png',
+      '/npm.webp',
       '/nz7.png'
     ]
 
@@ -109,7 +109,7 @@ const cards = [
   src={logoImage}
   alt="Logo"
   className={`brand-logo ${
-    logoImage === '/npm.png' ? 'aqqad-logo' : 'nz7-logo'
+    logoImage === '/npm.webp' ? 'aqqad-logo' : 'nz7-logo'
   }`}
 />
 
@@ -460,7 +460,7 @@ const cards = [
   <section className="manager-note">
 
     <img
-      src="/npm.png"
+      src="/npm.webp"
       alt="مدرسة العقاد العسكرية"
       className="manager-note-logo"
     />

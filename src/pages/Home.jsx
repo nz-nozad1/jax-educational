@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 console.log("🔥 JAX Acode Connected");
 const cards = [
   { icon: '📖', title: 'كتب الوزاره', text: 'كتب الوزاره الرسميه' },
-  { icon: '📚', title: 'المكتبة الرقمية', text: 'كتب ومراجع ومصادر تعليمية', locked: true },
+  { icon: '📚', title: ' الرقمية', text: 'كتب ومراجع ومصادر تعليمية', locked: true },
   { icon: '🧾', title: 'جدول المواد الدراسية', text: 'الوصول لمواعيد جميع المواد', locked: true },
   { icon: '📅', title: 'جدول الامتحانات', text: 'تابع مواعيد الاختبارات', locked: true },
   { icon: '⚛️', title: 'العلوم والمختبرات', text: 'استكشف العلوم والتجارب', locked: true },
@@ -23,13 +23,13 @@ const cards = [
   const [showManagerNote, setShowManagerNote] = useState(false)
   const [profileImage, setProfileImage] = useState(1)
  
-  const [logoImage, setLogoImage] = useState('/npm.png')
+  const [logoImage, setLogoImage] = useState('/npm.webp')
 
   // تبديل صور البروفايل كل ثانيتين
   useEffect(() => {
   const interval = setInterval(() => {
     setProfileImage((current) => (current === 4 ? 1 : current + 1));
-  }, 2000);
+  }, 5000);
 
   return () => clearInterval(interval);
 }, []);
@@ -37,7 +37,7 @@ const cards = [
   // تبديل الشعار كل 5 ثواني
   useEffect(() => {
     const logos = [
-      '/npm.png',
+      '/npm.webp',
       '/nz7.png'
     ]
 
@@ -113,7 +113,7 @@ const cards = [
       src={logoImage}
       alt="Logo"
       className={`brand-logo ${
-        logoImage === '/npm.png' ? 'aqqad-logo' : 'nz7-logo'
+        logoImage === '/npm.webp' ? 'aqqad-logo' : 'nz7-logo'
       }`}
     />
 
@@ -312,7 +312,7 @@ const cards = [
   <section className="manager-note">
 
     <img
-      src="/npm.png"
+      src="/npm.webp"
       alt="مدرسة العقاد العسكرية"
       className="manager-note-logo"
     />
