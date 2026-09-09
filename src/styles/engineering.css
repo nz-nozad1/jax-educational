@@ -1,0 +1,605 @@
+/* =========================
+   ENGINEERING PAGE
+========================= */
+
+.engineering-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   Engineering HEADER
+========================= */
+
+.engineering-header {
+  width: min(1100px, 90%);
+  margin: 15px auto 30px;
+  padding: 28px 25px;
+  text-align: center;
+
+  border-radius: 22px;
+  border: 2px solid transparent;
+
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(
+      135deg,
+      #8e1023 0%,
+      #8e1023 50%,
+      #145bd1 50%,
+      #145bd1 100%
+    ) border-box;
+
+  box-shadow:
+    8px 8px 22px rgba(15, 23, 42, 0.08),
+    -8px -8px 22px #ffffff;
+}
+
+.engineering-header h1 {
+  color: #8e1023;
+  font-size: 28px;
+  font-weight: 900;
+
+  animation:
+    redGlow 2s ease-in-out infinite alternate;
+}
+
+.engineering-header p {
+  margin-top: 10px;
+  color: #145bd1;
+  font-size: 14px;
+  font-weight: 900;
+
+  animation:
+    blueGlow 2s ease-in-out infinite alternate;
+}
+
+/* =========================
+   Engineering CONTENT
+========================= */
+
+.engineering-content {
+  width: min(1100px, 88%);
+  margin: 0 auto 40px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  flex: 1;
+}
+
+/* =========================
+   DASHBOARD GRID
+========================= */
+
+.dashboard-grid {
+  width: min(1100px, 88%);
+  margin: 0 auto 40px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  flex: 1;
+}
+
+/* =========================
+   DASHBOARD CARD
+========================= */
+
+.dashboard-card {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 240px;
+  padding: 25px;
+
+  border-radius: 24px;
+  border: 2px solid #145bd1;
+
+  background: #ffffff;
+  color: #050505;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  box-shadow:
+    9px 9px 24px rgba(15, 23, 42, 0.08),
+    -9px -9px 25px #ffffff;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 12px 28px rgba(20, 91, 209, 0.15),
+    9px 9px 24px rgba(15, 23, 42, 0.08);
+}
+
+.dashboard-card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+/* =========================
+   CARD ICON
+========================= */
+
+.card-icon {
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef4ff,
+      #f8f9fb
+    );
+
+  font-size: 36px;
+
+  box-shadow:
+    inset 0 0 0 1px rgba(20, 91, 209, 0.08);
+}
+
+.card-icon img {
+  width: 72px;
+  height: 72px;
+
+  object-fit: contain;
+  display: block;
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.card-content {
+  margin-top: 18px;
+}
+
+.card-content h2 {
+  color: #8e1023;
+  font-size: 18px;
+  font-weight: 900;
+
+  animation:
+    redGlow 2s ease-in-out infinite alternate;
+}
+
+.card-content p {
+  margin-top: 7px;
+
+  color: #444444;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+/* =========================
+   CARD ARROW
+========================= */
+
+.card-arrow {
+  margin-top: 12px;
+
+  color: #145bd1;
+
+  font-size: 22px;
+  font-weight: 900;
+}
+
+/* =========================
+   BAC BADGE
+========================= */
+
+.engineering-bac-badge {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  padding: 5px 10px;
+
+  border-radius: 10px;
+
+  background: #8e1023;
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 900;
+}
+
+/* =========================
+   DECORATIVE LIGHT
+========================= */
+
+.dashboard-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(20, 91, 209, 0.10),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+.dashboard-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  bottom: -65px;
+  left: -65px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(142, 16, 35, 0.08),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode .engineering-header {
+  background:
+    linear-gradient(#101622, #101622) padding-box,
+    linear-gradient(
+      135deg,
+      #8e1023 0%,
+      #8e1023 50%,
+      #145bd1 50%,
+      #145bd1 100%
+    ) border-box;
+
+  box-shadow:
+    8px 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+.dark-mode .engineering-header h1 {
+  color: #ff4764;
+}
+
+.dark-mode .engineering-header p {
+  color: #5d94ff;
+}
+
+.dark-mode .dashboard-card {
+  background: #101622;
+  color: #f5f7fb;
+
+  border-color: #145bd1;
+
+  box-shadow:
+    8px 8px 22px rgba(0, 0, 0, 0.35),
+    -5px -5px 15px rgba(255, 255, 255, 0.02);
+}
+
+.dark-mode .card-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #172238,
+      #111a29
+    );
+}
+
+.dark-mode .card-content h2 {
+  color: #ff4764;
+}
+
+.dark-mode .card-content p {
+  color: #cbd3df;
+}
+
+.dark-mode .dashboard-card::before {
+  background:
+    radial-gradient(
+      circle,
+      rgba(20, 91, 209, 0.12),
+      transparent 70%
+    );
+}
+
+.dark-mode .dashboard-card::after {
+  background:
+    radial-gradient(
+      circle,
+      rgba(142, 16, 35, 0.12),
+      transparent 70%
+    );
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.engineering-back-button {
+  width: 48px !important;
+  height: 48px !important;
+
+  margin: 0 6% 0 auto !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 0 !important;
+
+  border-radius: 14px !important;
+
+  background: #ffffff !important;
+  color: #145bd1 !important;
+
+  border: 2px solid #145bd1 !important;
+
+  font-size: 25px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+
+  cursor: pointer;
+
+  box-sizing: border-box !important;
+
+  box-shadow:
+    5px 5px 14px rgba(15, 23, 42, 0.08),
+    -4px -4px 12px #ffffff !important;
+
+  transition: 0.25s ease;
+}
+
+.engineering-back-button:hover {
+  transform: translateX(0px);
+
+  box-shadow:
+    0 0 12px rgba(20, 91, 209, 0.35),
+    5px 5px 14px rgba(15, 23, 42, 0.08);
+}
+
+.engineering-back-button:active {
+  transform: scale(0.94);
+}
+
+/* =========================
+   DARK MODE BACK BUTTON
+========================= */
+
+.dark-mode .engineering-back-button {
+  background: #101622 !important;
+  color: #5d94ff !important;
+  border-color: #145bd1 !important;
+
+  box-shadow:
+    5px 5px 14px rgba(0, 0, 0, 0.35),
+    -4px -4px 12px rgba(255, 255, 255, 0.02) !important;
+}
+
+/* =========================
+   ADMIN INFO
+========================= */
+
+.admin-info {
+  width: min(760px, calc(100% - 20px));
+  margin: 20px auto 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-item {
+  width: 100%;
+  padding: 14px 20px;
+
+  border-radius: 16px;
+  border: 2px solid #145bd1;
+
+  background: #ffffff;
+  color: #145bd1;
+
+  font-size: 14px;
+  font-weight: 900;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    6px 6px 16px rgba(15, 23, 42, 0.08),
+    -5px -5px 14px #ffffff;
+}
+
+.admin-item span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.admin-item strong {
+  display: block;
+  color: #8e1023;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .engineering-header {
+    width: 92%;
+    margin: 35px auto 25px;
+    padding: 22px 16px;
+    border-radius: 20px;
+  }
+
+  .engineering-header h1 {
+    font-size: 23px;
+  }
+
+  .engineering-header p {
+    font-size: 12px;
+  }
+
+  .dashboard-grid {
+    width: 92%;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+  }
+
+  .dashboard-card {
+    min-height: 210px;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .card-icon {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 16px;
+
+    font-size: 28px;
+  }
+
+  .card-icon img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .card-content {
+    margin-top: 14px;
+  }
+
+  .card-content h2 {
+    font-size: 14px;
+  }
+
+  .card-content p {
+    font-size: 10px;
+  }
+
+  .card-arrow {
+    font-size: 18px;
+  }
+
+  .engineering-bac-badge {
+    top: 9px;
+    right: 9px;
+
+    padding: 4px 8px;
+
+    font-size: 9px;
+  }
+
+  /* =========================
+     BACK BUTTON
+  ========================= */
+
+  .engineering-back-button {
+    position: absolute !important;
+
+    top: 213px !important;
+    right: 3% !important;
+
+    width: 43px !important;
+    height: 43px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+
+    border-radius: 20px !important;
+
+    border: 2px solid #145bd1 !important;
+
+    background: #ffffff !important;
+    color: #8e1023 !important;
+
+    font-size: 30px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+
+  .dark-mode .engineering-back-button {
+    background: #101622 !important;
+    color: #5d94ff !important;
+    border-color: #145bd1 !important;
+  }
+
+  .admin-info {
+    width: calc(100% - 20px);
+  }
+
+  .admin-item {
+    padding: 12px 15px;
+    font-size: 12px;
+  }
+
+  .back-arrow {
+    display: inline-block;
+    transform: translateY(-3px);
+  }
+
+}
