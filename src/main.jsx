@@ -1,5 +1,3 @@
-document.body.innerHTML="<h1 style="color:red;padding:30px">JAX TEST</h1>";
-window.onerror=(m,s,l,c,e)=>{document.body.innerHTML="<pre style="color:red;white-space:pre-wrap;padding:20px">"+m+"\n"+(e?.stack||"")+"</pre>";};
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
