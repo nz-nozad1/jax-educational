@@ -786,5 +786,11 @@
   display: inline-block;
   transform: translateY(-3px);
   }
+
+  .developer-music-toggle {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  }
   
 }
