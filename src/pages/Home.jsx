@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 console.log("🔥 JAX Acode Connected");
 const cards = [
   { icon: '📖', title: 'كتب الوزاره', text: 'كتب الوزاره الرسميه' },
-  { icon: '📚', title: ' الرقمية', text: 'كتب ومراجع ومصادر تعليمية', locked: true },
+  { icon: '📚', title: 'المكتبة الرقمية', text: 'كتب ومراجع ومصادر تعليمية', locked: true },
   { icon: '🧾', title: 'جدول المواد الدراسية', text: 'الوصول لمواعيد جميع المواد', locked: true },
   { icon: '📅', title: 'جدول الامتحانات', text: 'تابع مواعيد الاختبارات', locked: true },
   { icon: '⚛️', title: 'العلوم والمختبرات', text: 'استكشف العلوم والتجارب', locked: true },
